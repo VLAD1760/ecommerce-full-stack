@@ -6,6 +6,8 @@
 // El uso de un identificador único ([id]) en el nombre del archivo ayuda a 
 // garantizar que no haya conflictos con otros archivos en el mismo directorio o proyecto.
 
+
+
 import React from 'react'
 import { useRouter } from 'next/router'
 import { data } from '../../utils/data'
@@ -22,9 +24,7 @@ const ProductPage = () => {
         <Container maxW={'container.xl'} mt={2}>
             <SimpleGrid column={[1,2]} spacing={2}>
                 <Flex>
-                    <Image src=
-                    {
-                    `/images/${product.image}`}
+                    <Image src={`/images/${product.image}`}
                     rounded={'md'}
                     fit={'cover'}
                     alt={product.description}
