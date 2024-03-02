@@ -10,7 +10,7 @@
 
 import React from 'react'
 import { useRouter } from 'next/router'
-import { data } from '../../utils/data'
+import { data } from '../../Utils/data'
 import { Container, SimpleGrid, Flex, Image, Heading, Stack, Box, Text, useColorModeValue, Button} from '@chakra-ui/react'
 
 const ProductPage = () => { 

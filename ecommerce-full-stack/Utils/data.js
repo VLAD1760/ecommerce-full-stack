@@ -50,5 +50,12 @@ export const data = {
             price: 700,
             image: '/76.jpg'
         },
+        {
+            id:8,
+            title: 'Product 8',
+            description: 'Product 8 description',
+            price: 800,
+            image: '/75.jpg'
+        },
     ]
 }

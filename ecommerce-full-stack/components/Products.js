@@ -1,5 +1,5 @@
 import React from 'react'
-import { data } from '../utils/data'
+import { data } from '../Utils/data'
 import { Image } from '@chakra-ui/react'
 import { Grid, GridItem, Card, Box} from '@chakra-ui/react'
 import Link from 'next/link'
