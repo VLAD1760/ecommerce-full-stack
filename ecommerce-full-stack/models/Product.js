@@ -1,6 +1,6 @@
-import mongoose from "mongoose"
+import mongoose from 'mongoose'
 
-const productSchema = mongoose.Schema(
+const productSchema = new mongoose.Schema(
     {
         id: {type: String, required: true, unique: true},
         title: {type: String, required: true},
@@ -11,5 +11,5 @@ const productSchema = mongoose.Schema(
     { timestamps: true } // sirve para saber cuando un producto (dato) fue creado      
 )
 
-const product = mongoose.model.Product || mongoose.model('Product', productSchema)
-export default Product
+const products = mongoose.model.Product || mongoose.model('products', productSchema)
+export default products
