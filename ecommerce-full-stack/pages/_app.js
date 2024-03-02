@@ -1,4 +1,5 @@
 //* IMPORTAR LOS ESTILOS NECESARIOS DE CHAKRA-UI
+//* IMPORTAR LOS ESTILOS NECESARIOS DE CHAKRA-UI
 import { ChakraProvider } from '@chakra-ui/react'
 import Layout from "../components/Layout"
 

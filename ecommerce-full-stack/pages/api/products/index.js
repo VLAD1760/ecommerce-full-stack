@@ -1,7 +1,7 @@
 import { createRouter } from 'next-connect'
-import db from '../../utils/db'
-import {data} from '../../utils/data'
-import Product from '../../models/Products';
+import db from '../../../utils/db'
+import Product from '../../../models/Products';
+
 
 const router = createRouter();
 
@@ -9,10 +9,11 @@ router
   .get(async (req, res) => {
     //? MONGOOSE FUNCTIONS 
     await db.connect()
-    await Product.deleteMany()
-    await Product.insertMany(data.products)
-    await db.disconnect()
-    res.send("IT WORKS")
+   const products =  await Product.find({})
+//    console.log(products)
+    await db.disconnect(products)
+    res.send(products)
+    // res.send()
   })
 
 
